@@ -15,7 +15,7 @@ describe("krepselio funkcijos testavimas", () => {
       cy.get('#addToCart').click();
       cy.wait(1000);
       cy.get('#addToCart').click();
-      cy.get('.notification').should('be.visible')
+
       
 
 
