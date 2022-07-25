@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 
-describe("gintarine lt paieskos testavimas", () => {
+describe("search function test", () => {
   it("turi atidaryti produkta rezultatuose", () => {
   //cypress code
   cy.visit("https://www.gintarine.lt/")

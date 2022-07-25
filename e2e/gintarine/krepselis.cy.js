@@ -1,11 +1,11 @@
 // <reference types="cypress" />
 
-describe("krepselio funkcijos testavimas", () => {
-  it("dedam preke i krepesli", () => {
+describe("add tu cart function test", () => {
+  it("add to cart", () => {
       cy.visit("https://www.gintarine.lt/acc-long-600-mg-snypsciosios-tabletes-n10");
       cy.wait(3000)
       
-      // dėsim prekę 5 kartus spaudžiant mygtuka
+      // 5 times press of cart button
       cy.get('#addToCart').click();
       cy.wait(1000);
       cy.get('#addToCart').click();
@@ -25,7 +25,7 @@ describe("krepselio funkcijos testavimas", () => {
     cy.get('.notification').should('be.visible');
   });
   
-  it("pakeisime kieki ir spausime i krepsa", () => {
+  it("cart function via changing the quantity of product", () => {
     cy.visit("https://www.gintarine.lt/acc-long-600-mg-snypsciosios-tabletes-n10");
   cy.wait(1000)
   cy.get('#addtocart_21025_EnteredQuantity').type(8);
