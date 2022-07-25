@@ -2,7 +2,7 @@
 
 
 describe("search function test", () => {
-  it("turi atidaryti produkta rezultatuose", () => {
+  it("turi atidaryti produkta rezultatuose", function () {
     //cypress code
     cy.visit("https://www.gintarine.lt/")
     cy.get(':nth-child(2) > .navigation > .search-bar > #small-search-box-form > .sn-suggest > #small-searchterms').should('be.visible').type('elevit{enter}')
