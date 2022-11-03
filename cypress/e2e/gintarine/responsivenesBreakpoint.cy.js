@@ -12,8 +12,7 @@ describe("responsiveness breakpoint test", () => {
         })    })
 
 
-        it("mobile kiek stulpeliu ", function () {
-          //mobile 2 products
+        it("mobile should contain 2 columns ", function () {
           cy.viewport('iphone-6')
           cy.get('.category-products__cards').should('have.css', 'grid-template-columns', '163.333px 163.333px')
 
